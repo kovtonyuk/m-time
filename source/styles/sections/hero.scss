@@ -1,21 +1,19 @@
 .hero {
-  min-height: 59px;
-  padding: 174px 0 237px 0;
-  text-align: center;
+  position: absolute;
+  top: 288px;
+  text-align: left;
   color: #fff;
-  background: #ccc url("../images/hero-bg.jpg") center/cover no-repeat;
 
   &__about {
     font-family: $ff-main-bold;
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 5rem;
+    line-height: 0.3;
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 27px;
     font-family: $ff-main-light;
-    letter-spacing: -0.3px;
   }
 
   @media (max-width: 599px) {

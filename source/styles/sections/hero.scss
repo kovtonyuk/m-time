@@ -4,20 +4,35 @@
   text-align: left;
   color: #fff;
 
+  @media (max-width: 1080px) {
+    position: relative;
+    text-align: center;
+    top: 0;
+  }
+
   &__about {
     font-family: $ff-main-bold;
     font-size: 5rem;
     line-height: 0.3;
+
+    @media (max-width: 390px) {
+      font-size: 4rem;
+    }
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 27px;
-    font-family: $ff-main-light;
+    font-family: $ff-main-bold;
+
+    &:first-child {
+      font-family: $ff-main-bold;
+      font-size: 1.1rem;
+    }
   }
 
   @media (max-width: 599px) {
-    padding: 100px 20px;
+    padding: 0px 20px;
     min-height: inherit;
   }
 

@@ -1,11 +1,24 @@
 .header {
   position: relative;
   min-height: 59px;
-  background: linear-gradient(90deg,
-                  rgba(132, 100, 165, 0.4),
-                  rgba(215, 63, 135, 0.4)
-  ), url(http://m-time.online/img/bg_promo.jpg) center/cover no-repeat;
   padding-bottom: 150px;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(90deg,
+            rgba(244, 202, 149, 0.6),
+            rgba(151, 77, 38, 0.6)
+    ), url(../images/bg-header.jpg) center/cover no-repeat;;
+    transform: scale(-1, 1);
+  }
 
   &__top {
     display: flex;
@@ -26,12 +39,12 @@
 
     .logo__text {
       font-size: 1.8rem;
-      color: #d83f87;
+      color: #974d26;
     }
 
     .logo__text_time {
       font-size: 3rem;
-      color: #fff;
+      color: #5a8a8a;
     }
   }
 }

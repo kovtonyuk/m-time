@@ -3,7 +3,7 @@
   margin-top: 0;
   text-align: left;
   margin-left: 120px;
-  background: #d83f879e;
+  background: #974d26;
   padding: 70px 72px 50px;
   line-height: 1rem;
 }
@@ -73,7 +73,7 @@
   font-size: 1.3rem;
   text-decoration: none;
   text-transform: capitalize;
-  color: #fff;
+  color: #cad8c5;
   transition: 0.3s;
 
   @media (max-width: 1080px) {
@@ -82,7 +82,7 @@
 
   &:hover,
   &--active{
-    color: #424242;
+    color: #5a8a8a;
   }
 
   &:after {
@@ -113,7 +113,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     overflow: auto;
-    background: #d83f87e6;
+    background: #974d26;
     text-align: center;
     padding: 50px;
   }

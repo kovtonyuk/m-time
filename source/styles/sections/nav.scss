@@ -1,0 +1,140 @@
+.menu {
+  margin-top: 0;
+  text-align: left;
+  margin-left: 24px;
+  background: #ff00b8e6;
+  padding: 45px 60px 120px;
+  line-height: 1rem;
+}
+
+.menu__icon {
+  display: none;
+  width: 45px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #333333;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  display: block;
+}
+
+.nav__link {
+  display: block;
+  vertical-align: top;
+  padding: 10px;
+  font-family: $ff-main-bold;
+  font-size: 1.45rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  transition: 0.3s;
+
+  &:hover,
+  &--active{
+    color: #de2b24;
+  }
+
+  @media (max-width: 1080px) {
+    display: block;
+    text-align: center;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1080px) {
+  .menu {
+    margin-right: 20px;
+  }
+
+  .menu__icon{
+    display: inline-block;
+  }
+
+  .menu__links {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 172px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+
+    @media (min-width: 501px) and (max-width: 600px) {
+      margin-top: 169px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .menu__icon{
+    display: inline-block;
+  }
+
+  .menu__links {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 183px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+
+    @media (max-width: 499px) {
+      margin-top: 224px;
+    }
+  }
+}

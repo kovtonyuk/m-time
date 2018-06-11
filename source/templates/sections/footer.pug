@@ -1,0 +1,26 @@
+- var linkItems = ['facebook-official', 'instagram', 'linkedin']
+- var linkUrls = ['facebook.com', 'instagram.com', 'linkedin.com']
+
+footer.footer
+    .footer__top
+        .container
+            .footer__title МЫ В СОЦСЕТЯХ
+            .footer__links
+                each item, key in linkItems
+                    a.footer__social(href="http://" + linkUrls[key] target="_blank")
+                        i(class="fa fa-" + item aria-hidden="true")
+                            span.visually-hidden=linkItems
+
+            p.footer__text Мостище, Макаровский район,
+                br
+                .
+                    Киевская область
+                br
+                .
+                    clinic.vitaplus@gmail.com
+                br
+                .
+                    +38 (093) 602-25-86
+
+    .footer__bottom
+        .footer__copy Copyright © Your Website 2018 All Rights Reserved

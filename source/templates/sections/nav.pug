@@ -1,0 +1,29 @@
+nav#menu.menu
+    div.menu__icon
+        span
+        span
+        span
+        span
+
+    div.menu__links
+        a.nav__link.nav__link--active(href="/")  Home
+        a.nav__link(href="#about")  About us
+        a.nav__link(href="#approach")  Our Approach
+        a.nav__link(href="#work")  Our Work
+        a.button.header__button.button--red(href="#contact") Free Consultation
+
+//- var items = ['Home', 'About us', 'Our Approach', 'Our work']
+//- var dataItems = ['header', 'about', 'approach', 'work']
+
+    //div.menu__links
+        each item, key in items
+            if item === 'Home'
+                a.nav__link.nav__link--active(href="#" data-link=dataItems[key])= item
+            else
+                a.nav__link(href="#" data-link=dataItems[key])= item
+
+        a.button.header__button.button--red(href="#") Free Consultation
+
+
+
+

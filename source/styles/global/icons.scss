@@ -2,8 +2,8 @@
   margin: auto auto 23px auto;
 }
 
-.icon-like {
-  @include sprite($like);
+.icon-study {
+  @include sprite($study);
 }
 
 .icon-book {
@@ -11,5 +11,5 @@
 }
 
 .icon-message {
-  @include sprite($message);
+  @include sprite($planet);
 }

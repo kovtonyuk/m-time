@@ -2,14 +2,49 @@
   margin: auto auto 23px auto;
 }
 
-.icon-study {
-  @include sprite($study);
-}
-
 .icon-book {
   @include sprite($book);
 }
 
-.icon-message {
+.icon-smile {
+  @include sprite($smile);
+}
+
+.icon-heart {
+  @include sprite($heart);
+}
+
+.icon-mind {
+  @include sprite($mind);
+}
+
+.icon-people {
+  @include sprite($people);
+}
+
+.icon-planet {
   @include sprite($planet);
 }
+
+.icon-pointer {
+  @include sprite($pointer);
+}
+
+.icon-shield {
+  @include sprite($shield);
+}
+
+.icon-stress {
+  @include sprite($stress);
+}
+
+.icon-study {
+  @include sprite($study);
+}
+
+.icon-watch {
+  @include sprite($watch);
+}
+
+
+

@@ -45,8 +45,9 @@ gulp.task('styles:compile', function() {
 gulp.task('js', function() {
     return gulp.src([
             'source/js/init.js',
-            'source/js/scroll.js',
-            'source/js/toggle_menu.js',
+            'source/js/accordion.js',
+            //'source/js/scroll.js',
+            //'source/js/toggle_menu.js',
             'source/js/validation.js',
             'source/js/form.js',
             'source/js/main.js'

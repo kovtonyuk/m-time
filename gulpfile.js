@@ -46,6 +46,7 @@ gulp.task('js', function() {
     return gulp.src([
             'source/js/init.js',
             'source/js/accordion.js',
+            'source/js/slider.js',
             //'source/js/scroll.js',
             //'source/js/toggle_menu.js',
             'source/js/validation.js',

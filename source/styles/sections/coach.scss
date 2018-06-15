@@ -1,65 +1,71 @@
-.work {
-  padding: 110px 0;
-  background-color: #de2b24;
-  color: #fff;
+.coach {
+  padding: 99px 0 105px 0;
+  text-align: center;
+  background: url(../images/bg_coach.jpg) left top no-repeat;
+  background-size: 50%;
 
-  @media (max-width: 985px) {
-    padding-top: 40px;
-    padding-bottom: 20px;
+  @media (max-width: 980px) {
+    padding: 30px 0;
+  }
+
+  @media (max-width: 920px) {
+    background-image: none;
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
+    display: block;
+    /* -webkit-box-pack: justify; */
+    -ms-flex-pack: justify;
+    /* justify-content: space-between; */
+    margin-left: 50%;
+    /* padding: 0 42px; */
+    background: #fff;
 
-    @media (min-width: 430px) and (max-width: 1035px) {
-      width: 70%;
-      margin: auto;
-      padding: 0 20px 0 20px;
+    @media (max-width: 980px) {
+      justify-content: center;
+      padding: 0 25px;
     }
-  }
 
-  .title--with-bottom-line {
-    &:after {
-      background: #fff;
+    @media (max-width: 920px) {
+      margin: 0;
     }
+
   }
 
   &__item {
-    width: 256px;
-    height: 255px;
-    font-weight: bold;
-    color: #fff;
-    background: #f35e59;
+    padding: 26px;
+    color: #5c5c5c;
 
-    &--name {
-      position: relative;
-      padding: 130px 40px 75px 40px;
-      text-align: center;
+    &_time {
+      background: #5a8a8a;
+      color: #fff;
+    }
 
-      &:before {
-        @include sprite($work-item);
-        @include centerer-x();
+    @media (max-width: 1000px) {
+      padding-top: 0;
+    }
+  }
+  
+  &__header {
+    margin: 0 0 9px 0;
+    font-size: 1rem;
+    font-family: $ff-main-bold;
 
-        content: '';
-        top: 74px;
-      }
+    @media (max-width: 1000px) {
+      margin: 0;
+      padding: 0;
     }
   }
 
-  &__name {
-    font-size: 1.625rem;
-  }
-
-  &__picture {
-    width: 100%;
-    height: 100%;
-  }
-
   &__description {
-    font-size: 1rem;
+    margin-top: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: left;
+    padding-bottom: 30px;
+
+    @media (max-width: 980px) {
+      padding: 0 20px 30px;
+    }
   }
 }
-

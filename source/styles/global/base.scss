@@ -2,6 +2,9 @@ body {
   font-family: $ff-main;
   font-size: 1rem;
   line-height: 1.2;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
 html {

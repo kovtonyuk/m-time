@@ -46,7 +46,7 @@ gulp.task('js', function() {
     return gulp.src([
             'source/js/init.js',
             'source/js/accordion.js',
-            'source/js/slider.js',
+            'source/js/carousel.js',
             //'source/js/scroll.js',
             //'source/js/toggle_menu.js',
             'source/js/validation.js',
@@ -91,8 +91,22 @@ gulp.task('copy:images', function () {
 
 });
 
+/*------------ Copy bootstrap css ------------*/
+gulp.task('copy:bootstrap_css', function () {
+    return gulp.src('./source/bootstrap/**/*.*')
+        .pipe(gulp.dest('build/bootstrap'));
+
+});
+
+/*------------ Copy bootstrap js ------------*/
+gulp.task('copy:bootstrap_js', function () {
+    return gulp.src('./source/bootstrap/**/*.*')
+        .pipe(gulp.dest('build/bootstrap'));
+
+});
+
 /*------------ Copy ------------*/
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:bootstrap_css', 'copy:bootstrap_js'));
 
 /*------------ Watchers ------------*/
 gulp.task('watch', function() {

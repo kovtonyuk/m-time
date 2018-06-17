@@ -48,4 +48,17 @@
       background: #fdeacf;
     }
   }
+
+  &--with-bottom-line-testim {
+    position: relative;
+
+    &:after {
+      @include centerer-x();
+      content: '';
+      bottom: -16px;
+      width: 47px;
+      height: 5px;
+      background: #cecece;
+    }
+  }
 }

@@ -1,22 +1,56 @@
-section.form__section#faq
+section.faq__section#faq
     .container
-        .title
+        .title.title--with-bottom-line-faq
             h2.title__header FAQ
-            .title__text Enter your details below
 
-        .btn-down: a.arrow-down(href="form.html" target="_blank"): i.fa.fa-angle-down
-
-        .form-container.is-hidden
-            form(method="post" action="#").form
-                button(type="button").form__close-button x
-                .form__text.
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                    ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-
-                .form__fields
-                    input.form__input(type='text' placeholder="Your Name" autocomplete='text' data-valid='required')
-                    input.form__input(type="email" placeholder="Your email" autocomplete='email' data-valid='required' data-email)
-                    input.form__input(type="text" placeholder="Contact Number" autocomplete='tel' data-valid='required' data-number)
-
-                button(type="submit").button.button--red.button--text-uppercase Submit now
-
+        ul.accordion_faq
+            li.tabs
+                .social-links.icon__fa
+                    p
+                .paragraph
+                    h1 Как получить бонус?
+                    p
+                    | Покупка пакета Базовый до 20.06 - означает получение бонуса:
+                    br
+                    | Базовый 500 грн до 20.06, потом 700 грн
+                    br
+                    | Стандарт 1500 грн до 20.06, потом 1800 грн
+                    br
+                    | Премиум 3000 грн до 20.06, потом 3200 грн
+            li.tabs
+                .social-links.icon__fa
+                    p
+                .paragraph
+                    h1 Достаточно ли практики?
+                    p
+                    | Каждый день на онлайн-программе обучения медитации вы будете закреплять полученную теорию непосредственным
+                    | практическим опытом вместе с преподавателем. Наш курс выстроен таким образом, что бы вы получали
+                    | практический опыт как основу, а благодаря теории закрепляли его.
+            li.tabs
+                .social-links.icon__fa
+                    p
+                .paragraph
+                    h1 В чём мне реально поможет обучение?
+                    p
+                    | Вы получите арсенал техник медитации, которые сможете практиковать самостоятельно и справляться с
+                    | усталостью, напряжением, стрессом, а так же инструменты, которые позволят вам заботиться о своем
+                    | ментальном и эмоциональном здоровье. После нашей программы вы будете 100% уверенны, что научились медитировать.
+            li.tabs
+                .social-links.icon__fa
+                    p
+                .paragraph
+                    h1 Успевает ли преподаватель всем дать качественную обратную связь?
+                    p
+                    | Формат общения в закрытой группе FB позволяет оперативно реагировать на вопросы участников в
+                    | комментариях, обязательные отчеты после выполнения практик дают возможность отслеживать правильность
+                    | выполнения медитаций и преподаватель сразу при необходимости может отрегулировать механику.
+            li.tabs
+                .social-links.icon__fa
+                    p
+                .paragraph
+                    h1 Почему “M-time. Школа Медитации”? Есть же аналоги!
+                    p
+                    | Аналоги и есть и возможно, мы вам не подойдем, если вы ищите эзотерику, мистику, духовность. В
+                    | нашей школе о медитации говорят простым и понятным языком. Для нас медитация - это тренировка ума,
+                    | которая позволяет направлять внимание на важные области жизни и улучшать их качество. Мы “за”
+                    | практичность и эффективность.

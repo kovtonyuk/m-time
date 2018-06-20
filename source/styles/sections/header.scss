@@ -13,8 +13,8 @@
     height: 100%;
     z-index: -1;
     background: linear-gradient(90deg,
-            #8ed2df00,
-            #519fa58c
+            rgba(100, 86, 110, 0.45),
+            rgba(50, 62, 83, 0.84)
     ), url(../images/bg-header.jpg) right/cover no-repeat;
   }
 
@@ -63,7 +63,7 @@
   display: inline-block;
   vertical-align: top;
   padding: 12px 10px 8px;
-  color: #fff;
+  color: #bddfef;
   transition: 0.3s;
 
   @media (max-width: 650px) {

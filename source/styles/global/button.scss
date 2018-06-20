@@ -38,12 +38,12 @@
 }
 
 .button--header {
-  background: #f29e92;
-  border-bottom: 4px solid #371608;
-  color: #371608;
+  background: #96c2e2;
+  border-bottom: 4px solid #323e53;
+  color: #323e53;
 
   &:hover {
-    background: lighten(#f29e92, 7%);
+    background: darken(#96c2e2, 7%);
   }
 }
 

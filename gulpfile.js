@@ -91,22 +91,8 @@ gulp.task('copy:images', function () {
 
 });
 
-/*------------ Copy bootstrap css ------------*/
-gulp.task('copy:bootstrap_css', function () {
-    return gulp.src('./source/bootstrap/**/*.*')
-        .pipe(gulp.dest('build/bootstrap'));
-
-});
-
-/*------------ Copy bootstrap js ------------*/
-gulp.task('copy:bootstrap_js', function () {
-    return gulp.src('./source/bootstrap/**/*.*')
-        .pipe(gulp.dest('build/bootstrap'));
-
-});
-
 /*------------ Copy ------------*/
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:bootstrap_css', 'copy:bootstrap_js'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 
 /*------------ Watchers ------------*/
 gulp.task('watch', function() {

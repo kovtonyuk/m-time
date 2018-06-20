@@ -48,16 +48,12 @@
     me.isValid = function() {
         var requiredFields = document.querySelectorAll('[data-valid="required"]');
         var emailValue = document.querySelector('[data-email]').value;
-        var numberValue = document.querySelector('[data-number]').value;
 
         if (!me.isAllCompleted(requiredFields)) {
             console.log('Заполните обязательные поля');
             return false;
         } else if (!SK.validation.isEmail(emailValue)) {
             console.log('Не верно введен email');
-            return false;
-        } else if (!SK.validation.isNumber(numberValue)) {
-            console.log('Не верно введен номер');
             return false;
         }
 

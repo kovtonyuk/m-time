@@ -6,9 +6,9 @@
   color: #fff;
 }
 
-.button--red {
+.button--form {
   margin-right: 3px;
-  background: #de2b24;
+  background: #012e33;
   transition: 0.3s;
 
   @media (max-width: 1080px) {
@@ -18,7 +18,7 @@
   }
 
   &:hover {
-    background: lighten(#de2b24, 7%);
+    background: lighten(#012e33, 7%);
   }
 }
 
@@ -37,13 +37,13 @@
   }
 }
 
-.button--blue {
-  background: #cad8c5;
-  border-bottom: 4px solid #5a8a8a;
-  color: #974d26;
+.button--header {
+  background: #f29e92;
+  border-bottom: 4px solid #371608;
+  color: #371608;
 
   &:hover {
-    background: #b8ccc6;
+    background: lighten(#f29e92, 7%);
   }
 }
 

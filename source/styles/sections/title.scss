@@ -11,6 +11,10 @@
     font-size: 2.25rem;
     font-family: $ff-main-bold;
     line-height: 1;
+
+    @media (max-width: 710px) {
+      padding: 0 13px;
+    }
   }
 
   &__text {
@@ -32,7 +36,7 @@
       bottom: -16px;
       width: 47px;
       height: 5px;
-      background: #424242;
+      background: #17191b;
     }
   }
 
@@ -45,7 +49,20 @@
       bottom: -16px;
       width: 47px;
       height: 5px;
-      background: #fdeacf;
+      background: #012e33;
+    }
+  }
+
+  &--with-bottom-line-coach {
+    position: relative;
+
+    &:after {
+      @include centerer-x();
+      content: '';
+      bottom: -16px;
+      width: 47px;
+      height: 5px;
+      background: #94c8d6;
     }
   }
 
@@ -58,7 +75,7 @@
       bottom: -16px;
       width: 47px;
       height: 5px;
-      background: #cecece;
+      background: #f2efdf;
     }
   }
 
@@ -71,7 +88,7 @@
       bottom: -16px;
       width: 47px;
       height: 5px;
-      background: #fff;
+      background: #f2efdf;
     }
   }
 }

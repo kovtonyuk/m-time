@@ -1,7 +1,7 @@
 .faq__section {
   padding: 100px 0 110px 0;
-  color: #fff;
-  background-color: #5a8a8a;
+  color: #f2efdf;
+  background-color: #519fa5;
 
   @media (min-width: 320px) and (max-width: 810px) {
     padding: 50px 0 55px 0;
@@ -24,7 +24,7 @@
     margin: auto auto 20px;
     width: 65px;
     height: 65px;
-    border: 2px solid #fff;
+    border: 2px solid #f2efdf;
     border-radius: 50%;
   }
 
@@ -32,7 +32,7 @@
     @include centerer-xy();
 
     padding: 20px;
-    color: #fff;
+    color: #f2efdf;
 
     .fa {
       font-size: 2.5rem;
@@ -90,11 +90,11 @@
     text-align: center;
     font-size: 2rem;
     color: #fff;
-    background: #de2b24;
+    background: #012e33;
     transition: 0.3s;
 
     &:hover {
-      background: lighten(#de2b24, 10%);
+      background: lighten(#012e33, 10%);
     }
   }
 
@@ -167,7 +167,8 @@
   > a {
     display: block;
     text-decoration: none;
-    color: #515151;
+    color: #17191b;
+    text-transform: uppercase;
 
     @media (max-width: 600px) {
       padding: 10px 0;
@@ -194,7 +195,7 @@
     font-family: $fontawesome;
     font-style: normal;
     font-size: .9rem;
-    color: #5a8a8a;
+    color: #012e33;
   }
   &.minus:after {
     content: "\f068";
@@ -223,7 +224,7 @@
 
 .nav-sub-list-inner {
   padding: 0 .75rem .75rem;
-  color: #515151;
+  color: #17191b;
 
   p {
     margin-top: 0;

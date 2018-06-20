@@ -1,7 +1,7 @@
 .price {
   padding: 99px 0 105px 0;
   text-align: center;
-  color: #424242;
+  color: #17191b;
 
   @media (max-width: 985px) {
     padding: 40px 0 20px 0;
@@ -21,6 +21,7 @@
   }
 
   &__item {
+    position: relative;
     width: 30%;
     padding: 26px;
 
@@ -40,13 +41,26 @@
       width: 100%;
       margin: 0 5px 40px;
     }
+
+    .recommend {
+      position: absolute;
+      font-family: $ff-main-light;
+      font-size: 1rem;
+      transform: rotate(-45deg);
+      top: 0;
+      left: -20px;
+      color: #f2efdf;
+      background: #519fa5;
+      padding: 10px;
+      border-radius: 5px;
+    }
   }
   
   &__header {
     margin: 0 0 9px 0;
     font-size: 1.375rem;
     font-family: $ff-main-bold;
-    color: #424242;
+    color: #17191b;
 
     &-message {
       margin-right: 7px;
@@ -61,7 +75,6 @@
     margin-top: 0;
     font-size: 0.875rem;
     line-height: 1.5;
-    color: #5c5c5c;
     text-align: left;
     padding-bottom: 30px;
 
@@ -80,10 +93,16 @@
   font-family: $ff-main-bold;
 }
 
+.total--good {
+  color: #35838d;
+}
+
 .total--best {
   margin-top: 40px;
+  color: #35838d;
 }
 
 .total--premium {
   margin-top: 18px;
+  color: #35838d;
 }

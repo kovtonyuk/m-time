@@ -1,7 +1,7 @@
 .program {
   padding: 50px;
   text-align: center;
-  color: #424242;
+  color: #17191b;
 
   .accordion {
     margin-bottom: 30px;
@@ -23,16 +23,25 @@
     }
 
     dt {
-      padding: 10px;
-      background: #5a8a8a;
+      padding: 20px 30px;
+      background: #94c8d6;
       border-radius: 5px;
+      border-bottom: 5px solid #012e33;
       margin-bottom: 10px;
+
+      &:hover {
+        background: darken(#94c8d6, 10%);
+      }
+
       a {
+        font-family: $ff-main-bold;
+        text-transform: uppercase;
         display: block;
-        color: #fdeacf;
+        color: #d64d55;
         font-weight: bold;
       }
     }
+
     dd {
       padding: 10px;
       a {
@@ -41,6 +50,7 @@
         font-weight: bold;
       }
     }
+
     div {
       border-top: 0;
       font-size: 12px;

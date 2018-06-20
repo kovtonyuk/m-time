@@ -1,8 +1,8 @@
 .get {
   padding: 99px 0 105px 0;
   text-align: center;
-  background: #fdeacf;
-  color: #424242;
+  background: lighten(#f29e92, 12%);
+  color: #17191b;
 
   @media (max-width: 985px) {
     padding: 40px 0 20px 0;
@@ -56,7 +56,6 @@
     margin-top: 0;
     font-size: 0.875rem;
     line-height: 1.5;
-    color: #5c5c5c;
 
     @media (max-width: 980px) {
       padding: 0 20px

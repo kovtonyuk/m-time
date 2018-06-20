@@ -72,3 +72,23 @@ section.faq__section#faq
                                          духовность. В нашей школе о медитации говорят простым и понятным языком. Для
                                          нас медитация - это тренировка ума, которая позволяет направлять внимание
                                          на важные области жизни и улучшать их качество. Мы “за” практичность и эффективность.
+
+
+
+        h2.form__header Возникли вопросы?
+        .btn-down: a.arrow-down(href="form.html" target="_blank"): i.fa.fa-angle-down
+
+
+        .form-container.is-hidden
+            form(method="post" action="#").form
+                button(type="button").form__close-button x
+                .form__text.
+                    Задайте их нашему координатору
+
+                .form__fields
+                    input.form__input(type='text' placeholder="Your Name" autocomplete='text' data-valid='required')
+                    input.form__input(type="email" placeholder="Your email" autocomplete='email' data-valid='required' data-email)
+                    textarea.form__input(rows="10" cols="45" name="text" placeholder="Your message")
+
+                button(type="submit").button.button--red.button--text-uppercase Submit now
+

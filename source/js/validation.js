@@ -9,10 +9,10 @@
     }
 
     /*------------ Проверка правильности написания номера ------------*/
-    me.isNumber =function (number) {
+    /*me.isNumber =function (number) {
         var re = /^\d+$/;
         return re.test(number);
-    }
+    }*/
 
     /*------------ Проверка пустоты полей ------------*/
     me.isNotEmpty =function (str) {

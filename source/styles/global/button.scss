@@ -1,7 +1,25 @@
 .button {
   display: inline-block;
   text-decoration: none;
-  color: #cad8c5;
+  border-radius: 3px;
+  padding: 10px 22px 7px;
+  color: #fff;
+}
+
+.button--red {
+  margin-right: 3px;
+  background: #de2b24;
+  transition: 0.3s;
+
+  @media (max-width: 1080px) {
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+
+  &:hover {
+    background: lighten(#de2b24, 7%);
+  }
 }
 
 .button--call {

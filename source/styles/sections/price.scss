@@ -1,7 +1,7 @@
 .price {
   padding: 99px 0 105px 0;
   text-align: center;
-  color: #17191b;
+  color: #323e53;
 
   @media (max-width: 985px) {
     padding: 40px 0 20px 0;
@@ -26,7 +26,7 @@
     padding: 26px;
 
     &:hover {
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      box-shadow: 0 0 30px #408fb4;
       border-radius: 10px;
       cursor: pointer;
     }
@@ -49,10 +49,11 @@
       transform: rotate(-45deg);
       top: 0;
       left: -20px;
-      color: #f2efdf;
-      background: #519fa5;
+      color: #bddfef;
+      background: #1b3865;
       padding: 10px;
       border-radius: 5px;
+      text-transform: uppercase;
     }
   }
   
@@ -60,7 +61,6 @@
     margin: 0 0 9px 0;
     font-size: 1.375rem;
     font-family: $ff-main-bold;
-    color: #17191b;
 
     &-message {
       margin-right: 7px;
@@ -94,15 +94,15 @@
 }
 
 .total--good {
-  color: #35838d;
+  color: #408fb4;
 }
 
 .total--best {
   margin-top: 40px;
-  color: #35838d;
+  color: #408fb4;
 }
 
 .total--premium {
   margin-top: 18px;
-  color: #35838d;
+  color: #408fb4;
 }

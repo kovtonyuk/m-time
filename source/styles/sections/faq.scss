@@ -1,7 +1,7 @@
 .faq__section {
   padding: 100px 0 110px 0;
-  color: #f2efdf;
-  background-color: #519fa5;
+  color: #d3dbf6;
+  background-color: #1b3865;
 
   @media (min-width: 320px) and (max-width: 810px) {
     padding: 50px 0 55px 0;
@@ -24,7 +24,7 @@
     margin: auto auto 20px;
     width: 65px;
     height: 65px;
-    border: 2px solid #f2efdf;
+    border: 2px solid #d3dbf6;
     border-radius: 50%;
   }
 
@@ -32,7 +32,7 @@
     @include centerer-xy();
 
     padding: 20px;
-    color: #f2efdf;
+    color: #d3dbf6;
 
     .fa {
       font-size: 2.5rem;
@@ -57,7 +57,7 @@
   margin: auto;
   padding: 40px 50px 66px 50px;
   border-radius: 3px;
-  color: #828282;
+  color: #323e53;
   text-align: center;
   background-color: #fff;
 
@@ -90,11 +90,11 @@
     text-align: center;
     font-size: 2rem;
     color: #fff;
-    background: #012e33;
+    background: #408fb4;
     transition: 0.3s;
 
     &:hover {
-      background: lighten(#012e33, 10%);
+      background: lighten(#408fb4, 10%);
     }
   }
 
@@ -167,7 +167,7 @@
   > a {
     display: block;
     text-decoration: none;
-    color: #17191b;
+    color: #323e53;
     text-transform: uppercase;
 
     @media (max-width: 600px) {
@@ -195,7 +195,7 @@
     font-family: $fontawesome;
     font-style: normal;
     font-size: .9rem;
-    color: #012e33;
+    color: #1b3865;
   }
   &.minus:after {
     content: "\f068";
@@ -224,7 +224,7 @@
 
 .nav-sub-list-inner {
   padding: 0 .75rem .75rem;
-  color: #17191b;
+  color: #323e53;
 
   p {
     margin-top: 0;

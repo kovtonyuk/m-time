@@ -1,7 +1,7 @@
 .program {
   padding: 50px;
   text-align: center;
-  color: #17191b;
+  color: #323e53;
 
   .accordion {
     margin-bottom: 30px;
@@ -24,21 +24,21 @@
 
     dt {
       padding: 20px 30px;
-      background: #94c8d6;
+      background: darken(#d99886, 7%);
       border-radius: 5px;
-      border-bottom: 5px solid #012e33;
+      border-bottom: 5px solid #323e53;
       margin-bottom: 10px;
 
       &:hover {
-        background: darken(#94c8d6, 10%);
+        background: darken(#d99886, 15%);
       }
 
       a {
         font-family: $ff-main-bold;
         text-transform: uppercase;
         display: block;
-        color: #d64d55;
         font-weight: bold;
+        color: #f4dcd9;
       }
     }
 
@@ -46,7 +46,6 @@
       padding: 10px;
       a {
         display: block;
-        color: #000;
         font-weight: bold;
       }
     }

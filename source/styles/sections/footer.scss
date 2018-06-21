@@ -3,7 +3,7 @@
   &__top {
     padding: 88px 0 83px;
     text-align: center;
-    background: #17191b;
+    background: #6f88c4;
   }
 
   &__bottom {
@@ -13,7 +13,7 @@
   }
 
   &__title {
-    color: #94c8d6;
+    color: #d3dbf6;
     margin-bottom: 37px;
     font-size: 1.8125rem;
     font-family: $ff-main-bold;
@@ -22,11 +22,11 @@
   &__social {
     margin-left: 20px;
     padding: 15px;
-    border: 1px solid #94c8d6;
+    border: 1px solid #d3dbf6;
     border-radius: 3px;
 
     &:hover {
-      border: 1px solid #9f2112;
+      border: 1px solid #121528;
     }
 
     &:first-child {
@@ -36,10 +36,10 @@
 
   &__links {
     margin-bottom: 48px;
-    color: #94c8d6;
+    color: #d3dbf6;
 
     .fa {
-      color: #94c8d6;
+      color: #d3dbf6;
     }
   }
 

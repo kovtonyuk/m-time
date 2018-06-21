@@ -40,19 +40,6 @@
     }
   }
 
-  &--with-bottom-line-how {
-    position: relative;
-
-    &:after {
-      @include centerer-x();
-      content: '';
-      bottom: -16px;
-      width: 47px;
-      height: 5px;
-      background: #012e33;
-    }
-  }
-
   &--with-bottom-line-coach {
     position: relative;
 
@@ -62,7 +49,7 @@
       bottom: -16px;
       width: 47px;
       height: 5px;
-      background: #94c8d6;
+      background: #c6bfd2;
     }
   }
 
@@ -75,7 +62,7 @@
       bottom: -16px;
       width: 47px;
       height: 5px;
-      background: #f2efdf;
+      background: #bddfef;
     }
   }
 
@@ -88,7 +75,7 @@
       bottom: -16px;
       width: 47px;
       height: 5px;
-      background: #f2efdf;
+      background: #d3dbf6;
     }
   }
 }

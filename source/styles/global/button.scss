@@ -8,7 +8,7 @@
 
 .button--form {
   margin-right: 3px;
-  background: #012e33;
+  background: #1b3865;
   transition: 0.3s;
 
   @media (max-width: 1080px) {
@@ -18,7 +18,7 @@
   }
 
   &:hover {
-    background: lighten(#012e33, 7%);
+    background: lighten(#1b3865, 7%);
   }
 }
 

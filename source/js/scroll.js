@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#menu").on("click", function (event) {
+    $("#price_a").on("click", function (event) {
 
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();

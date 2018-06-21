@@ -49,7 +49,7 @@ gulp.task('js', function() {
             'source/js/accordion_faq.js',
             'source/js/scroll.js',
             //'source/js/toggle_menu.js',
-            'source/js/validation.js',
+            //'source/js/validation.js',
             'source/js/form.js',
             'source/js/main.js'
         ])

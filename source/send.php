@@ -9,7 +9,7 @@
                         </head>
                         <body>
                             <p>Имя: '.$_POST['name'].'</p>
-                            <p>Телефон: '.$_POST['phone'].'</p>                        
+                            <p>Email: '.$_POST['email'].'</p>                        
                         </body>
                     </html>'; //Текст нащего сообщения можно использовать HTML теги
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма

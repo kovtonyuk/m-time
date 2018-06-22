@@ -1,8 +1,8 @@
 /*------------ Открытие формы по нажатии кнопки ------------*/
 (function () {
     var openFormButton = document.querySelector('.arrow-down');
-    var form = document.querySelector('.form');
-    var nav = document.querySelector('.nav');
+    //var form = document.querySelector('.form');
+    //var nav = document.querySelector('.nav');
 
     if(openFormButton) {
         openFormButton.addEventListener('click', function(e) {
@@ -12,7 +12,7 @@
     }
 
     /*------------ Валидация полей формы по клику кнопки ------------*/
-    if (form) {
+    /*if (form) {
         form.addEventListener('submit', function (e) {
             e.preventDefault();
             if (SK.form.isValid()) {
@@ -21,10 +21,10 @@
                 console.log('Is not valid');
             }
         })
-    }
+    }*/
 
     /*------------ Скрол меню по клику на пункт ------------*/
-    if(nav) {
+    /*if(nav) {
         nav.addEventListener('click', function (e) {
             var target = e.target;
 
@@ -35,5 +35,5 @@
             e.preventDefault();
             SK.navigation.toggleToActiveLink(target);
         });
-    }
+    }*/
 }());

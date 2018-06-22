@@ -51,6 +51,7 @@ gulp.task('js', function() {
             //'source/js/toggle_menu.js',
             //'source/js/validation.js',
             'source/js/form.js',
+            'source/js/send.js',
             'source/js/main.js'
         ])
         .pipe(sourcemaps.init())

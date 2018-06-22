@@ -80,15 +80,14 @@ section.faq__section#faq
 
 
         .form-container.is-hidden
-            form(method="post" action="send.php").form
+            form#form(action="send.php").form
                 button(type="button").form__close-button x
                 .form__text.
                     Задайте их нашему координатору
 
                 .form__fields
-                    input.form__input(type='text' placeholder="Your Name" autocomplete='text' name='name' data-name='Имя: ' data-valid='required')
-                    input.form__input(type="email" placeholder="Your email" autocomplete='email' name='email' data-name='Email: ' data-valid='required' data-email)
-                    textarea.form__input(rows="10" cols="45" name="text" placeholder="Your message")
-
-                button(type="submit").button.button--form.button--text-uppercase Submit now
+                    input.form__input(type='text' placeholder="Your Name" autocomplete='text' name='name' required='required')
+                    input.form__input(type="email" placeholder="Your email" autocomplete='email' name='email' required='required')
+                    textarea.form__input(rows="10" cols="45" name="message" placeholder="Your message")
+                    input.button.button--form.button--text-uppercase(type='submit' value="Отправить")
 

@@ -24,13 +24,12 @@
 
     dt {
       padding: 20px 30px;
-      background: darken(#d99886, 7%);
+      background: darken(#323e53, 7%);
       border-radius: 5px;
-      border-bottom: 5px solid #323e53;
       margin-bottom: 10px;
 
       &:hover {
-        background: darken(#d99886, 15%);
+        background: darken(#323e53, 15%);
       }
 
       a {
@@ -38,7 +37,7 @@
         text-transform: uppercase;
         display: block;
         font-weight: bold;
-        color: #f4dcd9;
+        color: #96c2e2;
       }
     }
 

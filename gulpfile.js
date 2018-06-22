@@ -91,8 +91,15 @@ gulp.task('copy:images', function () {
 
 });
 
+/*------------ Copy php ------------*/
+gulp.task('copy:php', function () {
+    return gulp.src('./source/**/*.*')
+        .pipe(gulp.dest('build'));
+
+});
+
 /*------------ Copy ------------*/
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:php'));
 
 /*------------ Watchers ------------*/
 gulp.task('watch', function() {

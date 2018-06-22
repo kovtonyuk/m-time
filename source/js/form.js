@@ -45,7 +45,7 @@
     });
 
     /*------------ Проверка полей ------------*/
-    me.isValid = function() {
+    /*me.isValid = function() {
         var requiredFields = document.querySelectorAll('[data-valid="required"]');
         var emailValue = document.querySelector('[data-email]').value;
 
@@ -71,7 +71,7 @@
             }
         }
         return result;
-    };
+    };*/
 
     SK.form = me;
 

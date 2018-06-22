@@ -10,10 +10,11 @@
                         <body>
                             <p>Имя: '.$_POST['name'].'</p>
                             <p>Email: '.$_POST['email'].'</p>                        
+                            <p>Сообщение: '.$_POST['message'].'</p>                        
                         </body>
                     </html>'; //Текст нащего сообщения можно использовать HTML теги
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        $headers .= "From: Отправитель <from@example.com>\r\n"; //Наименование и почта отправителя
+        $headers .= "From: {$_POST['email']}"; //Наименование и почта отправителя
         mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
     }
 ?>

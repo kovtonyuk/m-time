@@ -3,6 +3,11 @@
   text-align: center;
   color: #323e53;
 
+  &_hr {
+    height: 2px;
+    background: #323e53;
+  }
+
   .accordion {
     margin-bottom: 30px;
 
@@ -24,12 +29,12 @@
 
     dt {
       padding: 20px 30px;
-      background: darken(#323e53, 7%);
+      background: #607da3;
       border-radius: 5px;
       margin-bottom: 10px;
 
       &:hover {
-        background: darken(#323e53, 15%);
+        background: lighten(#607da3, 13%);
       }
 
       a {
@@ -37,7 +42,7 @@
         text-transform: uppercase;
         display: block;
         font-weight: bold;
-        color: #96c2e2;
+        color: #252d3d;
       }
     }
 

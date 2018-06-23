@@ -7,7 +7,7 @@ $(document).ready(function(){
             data: form_data,
             success: function () {
                 //код в этом блоке выполняется при успешной отправке сообщения
-                alert("Ваше сообщение отпрвлено!");
+                alert("Ваше сообщение отправлено!");
                 window.location.href = "http://4893v1qa.idua.org/"
             }
         });

@@ -45,12 +45,14 @@ gulp.task('styles:compile', function() {
 gulp.task('js', function() {
     return gulp.src([
             'source/js/init.js',
-            'source/js/accordion.js',
+            //'source/js/accordion.js',
+            'source/js/carousel.js',
             'source/js/accordion_faq.js',
             'source/js/scroll.js',
             //'source/js/toggle_menu.js',
             //'source/js/validation.js',
             'source/js/form.js',
+            'source/js/send_form.js',
             'source/js/send_form.js',
             'source/js/main.js'
         ])
@@ -92,8 +94,15 @@ gulp.task('copy:images', function () {
 
 });
 
+/*------------ Copy php ------------*/
+gulp.task('copy:php', function () {
+    return gulp.src('./source/**/*.*')
+        .pipe(gulp.dest('build'));
+
+});
+
 /*------------ Copy ------------*/
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:php'));
 
 /*------------ Watchers ------------*/
 gulp.task('watch', function() {

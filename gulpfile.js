@@ -51,7 +51,7 @@ gulp.task('js', function() {
             //'source/js/toggle_menu.js',
             //'source/js/validation.js',
             'source/js/form.js',
-            'source/js/send.js',
+            'source/js/ajax.js',
             'source/js/main.js'
         ])
         .pipe(sourcemaps.init())
@@ -92,15 +92,8 @@ gulp.task('copy:images', function () {
 
 });
 
-/*------------ Copy php ------------*/
-gulp.task('copy:php', function () {
-    return gulp.src('./source/**/*.*')
-        .pipe(gulp.dest('build'));
-
-});
-
 /*------------ Copy ------------*/
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:php'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 
 /*------------ Watchers ------------*/
 gulp.task('watch', function() {

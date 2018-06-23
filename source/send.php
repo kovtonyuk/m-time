@@ -1,5 +1,5 @@
 <?
-    if(isset($_POST['submit'])){ //Проверка отправилось ли наше поля name и не пустые ли они
+    if((isset($_POST['name'])&&$_POST['name']!="") &&(isset($_POST['email']) &&$_POST['email']!="") &&(isset($_POST['message']) &&$_POST['message']!="")) { //Проверка отправилось ли наше поля name и не пустые ли они
         $to = 's.kovtonyuk@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
         $subject = 'Обратный звонок'; //Загаловок сообщения
         $message = '

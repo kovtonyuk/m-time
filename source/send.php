@@ -13,12 +13,9 @@ if (isset($_POST['submit'])) { //Проверка отправилось ли н
                         <p>Email: ' . $_POST['email'] . '</p>                        
                         <p>Сообщение: ' . $_POST['message'] . '</p>                        
                     </body>
-                </html>'; //Текст нащего сообщения можно использовать HTML теги
+                </html>'; //Текст нашего сообщения можно использовать HTML теги
     $headers = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
     $headers .= "From:" . $_POST['email']; //Наименование и почта отправителя
     mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
-
-    echo "Сообщение отправлено. Спасибо Вам " . $first_name . ", мы скоро свяжемся с Вами.";
-    echo "<br /><br /><a href='http://4893v1qa.idua.org/'>Вернуться на сайт.</a>";
 }
 ?>

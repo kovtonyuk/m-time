@@ -22,6 +22,8 @@
 
 .icon-heart {
   @include sprite($heart);
+  margin-bottom: 27px;
+  height: 94px;
   transition: all ease-in-out 1s;
 
   &:hover {
@@ -40,6 +42,7 @@
 
 .icon-people {
   @include sprite($people);
+  margin-bottom: 42px;
   transition: all ease-in-out 1s;
 
   &:hover {
@@ -67,6 +70,7 @@
 
 .icon-shield {
   @include sprite($shield);
+  margin-bottom: 26px;
   transition: all ease-in-out 1s;
 
   &:hover {
@@ -94,6 +98,7 @@
 
 .icon-watch {
   @include sprite($watch);
+  margin-bottom: 29px;
   transition: all ease-in-out 1s;
 
   &:hover {
